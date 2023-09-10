@@ -4,8 +4,8 @@ abstract class Figure {
 }
 
 class Rectangle extends Figure {
-    public double weight;
-    public double height;
+    private double weight;
+    private double height;
     Rectangle(double weight, double height){
         this.weight = CheckingNonNegativity.check(weight);
         this.height = CheckingNonNegativity.check(height);
@@ -18,7 +18,7 @@ class Rectangle extends Figure {
 }
 
 class Square extends Figure{
-    public double side;
+    private double side;
     Square(double side){
         this.side = CheckingNonNegativity.check(side);
     }
